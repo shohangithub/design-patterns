@@ -2,17 +2,17 @@
 
 internal class RemoteController
 {
-    private ICommand openButtonCommand;
+    private ICommand buttonCommand;
 
     public void RegisterCommand(ICommand command)
     {
-        this.openButtonCommand = command;
+        this.buttonCommand = command;
     }
 
 
     public async Task ButtonPressed()
     {
-        await openButtonCommand.Execute();
+        await buttonCommand.Execute();
     }
 
 }
