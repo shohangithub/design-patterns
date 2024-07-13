@@ -1,9 +1,12 @@
 ﻿
 using System.ComponentModel;
 
-namespace CommandPattern;
+namespace CommandPattern.Receiver;
 
-//INVOKER
+//RECEIVER
+//RECEIVER
+//RECEIVER
+
 internal class Door
 {
     private DoorState _state = new();
@@ -25,12 +28,12 @@ internal class Door
         });
     }
 
-    public DoorState GetCurrentState => this._state;
+    public DoorState GetCurrentState => _state;
 }
 
 
 
-[DefaultValue(DoorState.CLOSE)]
+[DefaultValue(CLOSE)]
 internal enum DoorState
 {
     CLOSE,

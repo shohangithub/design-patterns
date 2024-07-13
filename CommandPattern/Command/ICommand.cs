@@ -1,5 +1,7 @@
-﻿namespace CommandPattern;
+﻿namespace CommandPattern.Command;
 
+//COMMAND
+//COMMAND
 //COMMAND
 internal interface ICommand
 {

@@ -1,12 +1,17 @@
-﻿namespace CommandPattern;
+﻿using CommandPattern.Command;
 
+namespace CommandPattern.Invoker;
+
+// INVOKER
+// INVOKER
+// INVOKER
 internal class RemoteController
 {
     private ICommand buttonCommand;
 
     public void RegisterCommand(ICommand command)
     {
-        this.buttonCommand = command;
+        buttonCommand = command;
     }
 
 
