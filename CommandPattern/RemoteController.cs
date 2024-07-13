@@ -15,4 +15,9 @@ internal class RemoteController
         await buttonCommand.Execute();
     }
 
+    public async Task UndoButtonPressed()
+    {
+        await buttonCommand.Undo();
+    }
+
 }
